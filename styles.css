@@ -162,3 +162,66 @@ footer {
     text-align: center;
     padding: 10px 0;
 }
+
+/* Sección de perfil */
+#perfil {
+    background-color: white;
+    padding: 50px;
+    text-align: left;
+}
+
+.perfil-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.perfil-container img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.perfil-info h2 {
+    font-size: 2rem;
+    color: #003366;
+}
+
+.perfil-info p {
+    font-size: 1.2rem;
+    color: #666;
+    max-width: 600px;
+}
+
+/* Sección de cursos completados */
+#cursos-completados {
+    padding: 50px;
+    text-align: center;
+    background-color: #fff;
+}
+
+#cursos-completados h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.course-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.course-card {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 200px;
+}
+
+.course-card h3 {
+    font-size: 1.5rem;
+    color: #003366;
+}
