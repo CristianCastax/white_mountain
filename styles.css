@@ -1,132 +1,164 @@
-/* General Styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
 }
 
 body {
-    font-family: 'Arial', sans-serif;
-    line-height: 1.6;
-    background-color: #f4f4f4;
+    background-color: #f0f4f8;
     color: #333;
 }
 
+/* Barra de navegación */
 header {
-    background-color: #2d2d2d;
-    color: white;
-    padding: 10px 0;
-    text-align: center;
-}
-
-header .logo h1 {
-    margin: 0;
-    font-size: 2rem;
-    color: #ffcc00;
+    background-color: #003366;
+    padding: 10px;
 }
 
 nav ul {
     list-style: none;
     display: flex;
-    justify-content: center;
-    gap: 20px;
+    justify-content: space-around;
 }
 
-nav a {
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
     color: white;
     text-decoration: none;
-    font-size: 1.1rem;
+    font-weight: bold;
 }
 
-.hero {
-    background-image: url('https://th.bing.com/th/id/R.291714b8217940ff7f2618b5fc38a9ea?rik=8vTOm%2bE8VSSy8w&pid=ImgRaw&r=0'); /* Imagen de fondo */
-    background-size: cover;
-    background-position: center;
-    height: 60vh;
+nav ul li a:hover {
+    color: #99ccff;
+}
+
+/* Banner principal */
+#banner {
+    background: url('https://th.bing.com/th/id/R.291714b8217940ff7f2618b5fc38a9ea?rik=8vTOm%2bE8VSSy8w&pid=ImgRaw&r=0') no-repeat center center/cover;
+    height: 400px;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
     color: white;
 }
 
-.hero h2 {
-    font-size: 2.5rem;
+#banner h1 {
+    font-size: 3rem;
 }
 
-.hero p {
+#banner p {
     font-size: 1.2rem;
-    margin: 10px 0;
 }
 
-.cta-button {
-    background-color: #ffcc00;
-    color: #333;
-    padding: 10px 20px;
-    border: none;
-    font-size: 1.2rem;
-    cursor: pointer;
-    text-decoration: none;
-    border-radius: 5px;
-}
-
-.cta-button:hover {
-    background-color: #e6b800;
-}
-
-.courses {
-    padding: 50px 20px;
+/* Sección de cursos */
+#cursos {
+    padding: 50px 0;
     background-color: #fff;
     text-align: center;
 }
 
-.courses h2 {
-    font-size: 2rem;
+#cursos h2 {
+    font-size: 2.5rem;
     margin-bottom: 20px;
 }
 
-.course-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 20px;
+.categorias {
+    margin-bottom: 30px;
 }
 
-.course-item {
-    background-color: #f4f4f4;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.course-item h3 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-}
-
-.course-item p {
-    font-size: 1rem;
-    margin-bottom: 10px;
-}
-
-.button {
-    display: inline-block;
-    padding: 10px 15px;
-    background-color: #ffcc00;
-    color: #333;
-    text-decoration: none;
+.categorias button {
+    padding: 10px 20px;
+    background-color: #003366;
+    color: white;
+    border: none;
+    cursor: pointer;
     border-radius: 5px;
     font-size: 1rem;
 }
 
-.button:hover {
-    background-color: #e6b800;
+.categorias button:hover {
+    background-color: #005bb5;
 }
 
+/* Grid de cursos */
+.course-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.course-card {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+.course-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.course-card h3 {
+    padding: 20px;
+    font-size: 1.5rem;
+    color: #003366;
+}
+
+/* Sección About Us */
+#about-us {
+    background-color: #f0f4f8;
+    padding: 50px 0;
+    text-align: center;
+}
+
+#about-us h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+#about-us p {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.team {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.team-member {
+    text-align: center;
+}
+
+.team-member img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.team-member h4 {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    color: #003366;
+}
+
+/* Footer */
 footer {
-    background-color: #2d2d2d;
+    background-color: #003366;
     color: white;
     text-align: center;
-    padding: 20px 0;
-    margin-top: 50px;
+    padding: 10px 0;
 }

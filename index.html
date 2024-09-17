@@ -3,53 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tienda de Cursos de Tecnología</title>
+    <title>White Mountain Courses</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Barra de navegación -->
     <header>
-        <div class="logo">
-            <h1>TechCursos</h1>
-        </div>
         <nav>
             <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Cursos</a></li>
-                <li><a href="#">Nosotros</a></li>
-                <li><a href="#">Contacto</a></li>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#about-us">About Us</a></li>
+                <li><a href="#cursos">Cursos</a></li>
+                <li><a href="#esencia">Nuestra Esencia</a></li>
+                <li><a href="#login">Inicio de Sesión</a></li>
             </ul>
         </nav>
     </header>
 
-    <section class="hero">
-        <h2>Aprende las habilidades tecnológicas del futuro</h2>
-        <p>Descubre nuestros cursos en programación, IA, ciberseguridad y más.</p>
-        <a href="#" class="cta-button">Ver Cursos</a>
+    <!-- Banner principal -->
+    <section id="banner">
+        <div class="banner-text">
+            <h1>White Mountain Courses</h1>
+            <p>El futuro de la tecnología en tus manos</p>
+        </div>
     </section>
 
-    <section class="courses">
-        <h2>Nuestros Cursos</h2>
+    <!-- Sección de cursos -->
+    <section id="cursos">
+        <h2>Cursos</h2>
+        <div class="categorias">
+            <button>Categorías</button>
+        </div>
         <div class="course-grid">
-            <div class="course-item">
-                <h3>Curso de Python</h3>
-                <p>Aprende a programar en Python desde cero.</p>
-                <a href="#" class="button">Comprar Ahora</a>
+            <div class="course-card">
+                <img src="web_programming.jpg" alt="Programación Web">
+                <h3>Programación Web</h3>
             </div>
-            <div class="course-item">
-                <h3>Inteligencia Artificial</h3>
-                <p>Explora el mundo de la IA y sus aplicaciones.</p>
-                <a href="#" class="button">Comprar Ahora</a>
+            <div class="course-card">
+                <img src="java_course.jpg" alt="Curso Java desde 0">
+                <h3>Curso Java desde 0</h3>
             </div>
-            <div class="course-item">
-                <h3>Desarrollo Web</h3>
-                <p>Construye páginas web modernas y dinámicas.</p>
-                <a href="#" class="button">Comprar Ahora</a>
+            <div class="course-card">
+                <img src="sql_basics.jpg" alt="Principios SQL">
+                <h3>Principios SQL</h3>
             </div>
         </div>
     </section>
 
+    <!-- Sección About Us -->
+    <section id="about-us">
+        <h2>About Us</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lacinia, quam id interdum finibus, vivamus viverra turpis quam at nulla.</p>
+        <div class="team">
+            <div class="team-member">
+                <img src="instructor1.jpg" alt="Instructor 1">
+                <h4>Instructor 1</h4>
+            </div>
+            <div class="team-member">
+                <img src="instructor2.jpg" alt="Instructor 2">
+                <h4>Instructor 2</h4>
+            </div>
+            <div class="team-member">
+                <img src="instructor3.jpg" alt="Instructor 3">
+                <h4>Instructor 3</h4>
+            </div>
+            <div class="team-member">
+                <img src="instructor4.jpg" alt="Instructor 4">
+                <h4>Instructor 4</h4>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
     <footer>
-        <p>&copy; 2024 TechCursos. Todos los derechos reservados.</p>
+        <p>&copy; 2024 White Mountain Courses. Todos los derechos reservados.</p>
     </footer>
 </body>
 </html>
