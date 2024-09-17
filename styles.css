@@ -225,3 +225,48 @@ footer {
     font-size: 1.5rem;
     color: #003366;
 }
+
+/* Sección Nuestra Esencia */
+#nuestra-esencia {
+    background-color: #ffffff;
+    padding: 50px;
+    text-align: center;
+}
+
+.nuestra-esencia-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.nuestra-esencia-container h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #003366;
+}
+
+.esencia-item {
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+.esencia-item h3 {
+    font-size: 2rem;
+    color: #003366;
+    margin-bottom: 10px;
+}
+
+.esencia-item p {
+    font-size: 1.2rem;
+    color: #666;
+}
+
+.esencia-item ul {
+    list-style: none;
+    padding: 0;
+}
+
+.esencia-item ul li {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 10px;
+}
