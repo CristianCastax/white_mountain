@@ -34,8 +34,24 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #99ccff;
+    color: hsl(211, 79%, 11%);
 }
+.btn-inscribir {
+    display: inline-block;
+    margin-left: 10px;
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .btn-inscribir:hover {
+    background-color: #218838;
+  }
+  
 
 /* Banner principal */
 #banner {
