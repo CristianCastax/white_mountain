@@ -129,6 +129,31 @@ nav ul li a:hover {
     color: #003366;
 }
 
+/* Estilos base para la tarjeta */
+.course-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    text-align: center;
+}
+
+/* Animación al hacer hover */
+.course-card:hover {
+    transform: scale(1.05); /* Agrandar un poco la tarjeta */
+    background-color: #053467; /* Cambiar el fondo a azul */
+    color: white; /* Cambiar el color de texto si es necesario */
+}
+
+.course-card:hover h3 {
+    color: white;
+}
+.course-card img {
+    width: 100%;
+    height: auto;
+}
+
+
 /* Sección About Us */
 #about-us {
     background-color: #f0f4f8;
