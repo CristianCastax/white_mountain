@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nuestra Esencia - Cursos de Programación</title>
     <link rel="stylesheet" href="styles.css"> <!-- Enlace al archivo CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
 
@@ -13,8 +14,8 @@
         <nav>
             <ul>
                 <li><a href="index.html">Inicio</a></li>
-                <li><a href="#about-us">About Us</a></li>
-                <li><a href="#cursos">Cursos</a></li>
+                <li><a href="index.html#about-us">About Us</a></li>
+                <li><a href="index.html#cursos">Cursos</a></li>
                 <li><a href="our_essence.html">Nuestra Esencia</a></li>
                 <li><a href="profile.html">Perfil</a></li>
             </ul>
@@ -23,7 +24,9 @@
 
     <!-- Banner principal -->
     <section id="banner">
-        <h1>Nuestra Esencia</h1>
+        <div class="row">
+            <h1 class="animado">Nuestra Esencia</h1>
+        </div>
     </section>
 
     <!-- Sección Nuestra Esencia -->
@@ -50,11 +53,24 @@
         </div>
     </section>
 
-
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2024 White Mountain Courses. Todos los derechos reservados.</p>
-    </footer>
+ <!-- Footer -->
+<footer style="padding: 20px; text-align: center;">
+    <p style="color: #fff;">&copy; 2024 White Mountain Courses. Todos los derechos reservados.</p>
+    <div class="social-media">
+        <a href="https://www.facebook.com" target="_blank" class="me-3">
+            <i class="fab fa-facebook-f" style="font-size: 1.5rem; color: #fff;"></i>
+        </a>
+        <a href="https://www.twitter.com" target="_blank" class="me-3">
+            <i class="fab fa-twitter" style="font-size: 1.5rem; color: #fff;"></i>
+        </a>
+        <a href="https://www.instagram.com" target="_blank" class="me-3">
+            <i class="fab fa-instagram" style="font-size: 1.5rem; color: #fff;"></i>
+        </a>
+        <a href="https://www.linkedin.com" target="_blank" class="me-3">
+            <i class="fab fa-linkedin-in" style="font-size: 1.5rem; color: #fff;"></i>
+        </a>
+    </div>
+</footer>
 
 </body>
 </html>

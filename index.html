@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>White Mountain Courses</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -28,28 +29,44 @@
             <p>El futuro de la tecnología en tus manos</p>
         </div>
     </section>
-
-    <!-- Sección de cursos -->
-    <section id="cursos">
-        <h2>Cursos</h2>
-        <div class="categorias">
-            <button>Categorías</button>
+<!-- Sección de cursos -->
+<section id="cursos">
+    <h2>Cursos</h2>
+    <div class="course-grid">
+        <div class="course-card">
+            <a href="curso_python.html">
+                <img src="https://th.bing.com/th/id/OIP.UymIxYYFojhrs6DpSmRWyAHaE8?rs=1&pid=ImgDetMain" alt="Curso de Python">
+            </a>
+            <h3>Curso básico de Python</h3>
         </div>
-        <div class="course-grid">
-            <div class="course-card">
-                <img src="https://th.bing.com/th/id/OIP.UymIxYYFojhrs6DpSmRWyAHaE8?rs=1&pid=ImgDetMain" alt="Programación Web">
-                <h3>Programación Web</h3>
-            </div>
-            <div class="course-card">
+        <div class="course-card">
+            <a href="curso_java.html">
                 <img src="https://th.bing.com/th/id/OIP.5kA8SiEF4VC5m_WeeWfAqQHaEK?rs=1&pid=ImgDetMain" alt="Curso Java desde 0">
-                <h3>Curso Java desde 0</h3>
-            </div>
-            <div class="course-card">
-                <img src="./img/sql.png" alt="Principios SQL">
-                <h3>Principios SQL</h3>
-            </div>
+            </a>
+            <h3>Curso Java desde 0</h3>
         </div>
-    </section>
+        <div class="course-card">
+            <a href="curso_manejo_de_bd.html">
+                <img src="./img/sql.png" alt="Principios SQL">
+            </a>
+            <h3>Principios SQL</h3>
+        </div>
+        <div class="course-card">
+            <a href="curso_ciberseguridad.html">
+                <img src="./img/ciberseguridad.jpg" alt="Curso de Ciberseguridad">
+            </a>
+            <h3>Curso de Ciber-
+                seguridad</h3>
+        </div>
+        <div class="course-card">
+            <a href="curso_virtualizacion.html">
+                <img src="./img/virtualizacion.jpg" alt="Curso de Virtualización">
+            </a>
+            <h3>Curso de Virtualización</h3>
+        </div>
+    </div>
+</section>
+
     <!-- Sección About Us -->
     <section id="about-us">
         <h2>About Us</h2>
@@ -57,38 +74,42 @@
         <div>
             <img src="./img/grupal.jpg" alt="Equipo de White Mountain Courses" width="80%">
         </div>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lacinia, quam id interdum finibus, vivamus viverra turpis quam at nulla.</p>
+        <div class="about-us">
+            <p>Somos un equipo de jóvenes apasionados por la tecnología y el aprendizaje continuo, comprometidos con hacer que la educación en programación sea accesible para todos. Nuestra misión es crear una plataforma donde cualquier persona, independientemente de su experiencia previa, pueda aprender a programar de manera efectiva, práctica y divertida.</p>
+            <p>Estamos convencidos de que la programación no solo es una herramienta clave en el mundo moderno, sino que también abre infinitas oportunidades de crecimiento personal y profesional. Como jóvenes emprendedores, entendemos el valor de la dedicación y el esfuerzo, y lo hemos volcado en esta plataforma para ayudar a otros a alcanzar sus metas.</p>
+            <p>¡Únete a nosotros y comienza tu viaje en el mundo de la programación!</p>
+        </div>
         <div class="team">
             <div class="team-member">
                 <img src="./img/i1.jpg" alt="Instructor 1">
                 <h4>Instructor 1</h4>
-                <h5>Juan Perez</h5>
+                <h5>Tadeo López</h5>
             </div>
             <div class="team-member">
                 <img src="./img/i2.jpg" alt="Instructor 2">
                 <h4>Instructor 2</h4>
-                <h5>Juan Perez</h5>
+                <h5>Juan Ruiz</h5>
             </div>
             <div class="team-member">
                 <img src="./img/i3.jpg" alt="Instructor 3">
                 <h4>Instructor 3</h4>
-                <h5>Juan Perez</h5>
+                <h5>Erick Alfaro</h5>
             </div>
             <div class="team-member">
                 <img src="./img/i4.jpg" alt="Instructor 4">
                 <h4>Instructor 4</h4>
-                <h5>Juan Perez</h5>
+                <h5>Alejandro Ruiz</h5>
             </div>
             <div class="team-member">
                 <img src="./img/i5.jpg" alt="Instructor 4">
                 <h4>Instructor 5</h4>
-                <h5>Juan Perez</h5>
+                <h5>Eduardo Rodríguez</h5>
             </div>
         </div>
     </section>
     <section id="contact">
         <div class="container">
-        <h2>Contactanos</h2>
+        <h2>Contáctanos</h2>
         <div class="form">
             <form action="https://formspree.io/f/meojwbgd" method="POST" id="form">
                 <div class="grupo" >
@@ -106,14 +127,29 @@
                     <button type="submit">Enviar</button>   
                 </div>
 
-                    </form>
+            </form>
         </div>
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2024 White Mountain Courses. Todos los derechos reservados.</p>
-    </footer>
-</body>
+<!-- Footer -->
+<footer style="padding: 20px; text-align: center;">
+    <p style="color: #fff;">&copy; 2024 White Mountain Courses. Todos los derechos reservados.</p>
+    <div class="social-media">
+        <a href="https://www.facebook.com" target="_blank" class="me-3">
+            <i class="fab fa-facebook-f" style="font-size: 1.5rem; color: #fff;"></i>
+        </a>
+        <a href="https://www.twitter.com" target="_blank" class="me-3">
+            <i class="fab fa-twitter" style="font-size: 1.5rem; color: #fff;"></i>
+        </a>
+        <a href="https://www.instagram.com" target="_blank" class="me-3">
+            <i class="fab fa-instagram" style="font-size: 1.5rem; color: #fff;"></i>
+        </a>
+        <a href="https://www.linkedin.com" target="_blank" class="me-3">
+            <i class="fab fa-linkedin-in" style="font-size: 1.5rem; color: #fff;"></i>
+        </a>
+    </div>
+</footer>
+
+
 </html>
