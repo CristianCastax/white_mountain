@@ -16,6 +16,23 @@ header {
     padding: 10px;
 }
 
+/* Contenedor del logo y menú */
+.nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Estilos para el logo */
+.logo {
+    width: 10%;
+    max-width: 150px; /* Limitar tamaño máximo */
+    height: auto;
+}
+
 nav ul {
     list-style: none;
     display: flex;
